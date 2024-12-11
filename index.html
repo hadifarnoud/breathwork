@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="15-second Breathwork Timer PWA"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Breathwork Timer</title>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Breathwork</h1>
+      <p>15-second guided breathing cycle</p>
+    </header>
+    
+    <main class="content">
+      <section class="timer-section">
+        <div class="timer-circle" id="timerCircle">
+          <div class="timer-instructions">Inhale</div>
+          <div class="timer-countdown">8</div>
+        </div>
+        <button class="start-button">Start</button>
+      </section>
+
+      <section class="stats-section">
+        <h2>Today: <span class="today-count">0</span> cycles</h2>
+        <div class="calendar-container"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Load the JavaScript after the body -->
+  <script src="app.js"></script>
+</body>
+</html>
